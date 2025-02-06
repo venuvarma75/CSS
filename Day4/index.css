@@ -1,0 +1,4 @@
+:hover:nth-child(){
+    background-color: var(--prime-color);
+    color:aquamarine;
+}
