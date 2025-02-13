@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 2px 4px whitesmoke;
+          padding: 1.5%;
+          /* height:5vh ; */
+          justify-content: space-between;
+          position: fixed;
+          width: 100%;
+          z-index: 999;
+          background-color: whitesmoke;
+      }
+      .home {
+        display: flex;
+        gap: 25%;
+        padding-right: 5%;
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(11, 10, 11);
+      }
+      .sitename {
+        font-size: 1.2rem;
+        letter-spacing: 0.6rem;
+      }
+      .mainimage {
+        flex-direction: column;
+        align-self: flex-end;
+        display: flex;
+        justify-content: center;
+        background-image: url("https://www.w3schools.com/w3images/hamburger.jpg");
+        height: 100vh;
+        justify-content: end;
+      }
+      .about {
+        display: flex;
+        flex-basis: 50%;
+        height: 100vh;
+      }
+      .child1 {
+        flex-basis: 40%;
+        padding-left: 20%;
+        height: 50vh;
+      }
+      img {
+        height: 90vh;
+        width: 30vw;
+        padding-top: 20%;
+        padding-left: 6%;
+      }
+      .child2 {
+        flex-basis: 40%;
+        padding-top: 5%;
+        text-align: justify;
+        padding-left: 6%;
+        line-height: 1.5;
+      }
+      #a1 {
+        line-height: 3;
+        font-size: 2rem;
+        letter-spacing: 0.7rem;
+      }
+      #a2 {
+        line-height: 3;
+        font-size: 1.2rem;
+        letter-spacing: 0.7rem;
+      }
+
+      .menu {
+        display: flex;
+        align-items: center;
+        flex-basis: 50%;
+        height: 100vh;        
+        flex-basis: 50%;
+        justify-content: space-evenly;
+        font-size: 1.3rem;
+        line-height: 2;
+      }
+      .child3 {
+        padding-left: 0;
+        
+      }
+      #a3 {
+        line-height: 3;
+        font-size: 3rem;
+        letter-spacing: 1rem;
+        padding-left: 0;
+      }
+      .child4 {
+        padding-right: 5%;
+      }
+      h4 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.2rem;
+        color: grey;
+      }
+      .contact {
+        padding: 5%;
+        line-height: 3;
+      }
+      input:focus {
+        border: none;
+        outline: none;
+        
+      }
+      input {
+        width: 50vw;
+        height: 5vh;
+      }
+      .last {
+        background-color: grey;
+        height: 12vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+      }
+       
+      
+      /* Tablets & Small Screens */
+      @media (max-width: 1024px) {
+        .home {
+          gap: 1rem;
+        }
+        .sitename {
+          font-size: 1.2rem;
+        }
+        .mainimage span {
+          font-size: 40px;
+        }
+        .menu,
+        .about {
+          flex-direction: column;
+          text-align: center;
+        }
+        .child1 img,
+        .child4 img {
+          width: 70%;
+        }
+        input {
+          width: 90%;
+        }
+      }
+
+      /* Mobile Devices */
+      @media (max-width: 768px) {
+        .nav {
+          flex-direction: column;
+          text-align: center;
+          padding: 10px;
+        }
+        .home {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .sitename {
+          font-size: 1.2rem;
+        }
+        .mainimage span {
+          font-size: 30px;
+        }
+        .about,
+        .menu {
+          flex-direction: column;
+          text-align: center;
+        }
+        .child1 img,
+        .child4 img {
+          width: 100%;
+        }
+        h4 {
+          font-size: 1.3rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        input {
+          width: 100%;
+        }
+        button {
+          width: 100%;
+        }
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="sitename"><b>Gourmet au catering</b></div>
+      <div class="home">
+        <a href="#about">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="mainimage">
+      <span style="color: grey; font-size: 50px">Le Catering</span>
+    </div>
+
+    <!-- second section -->
+
+    <div class="about" id="about">
+      <div class="child1">
+        <img
+          src="https://www.w3schools.com/w3images/tablesetting2.jpg"
+          alt=""
+        />
+      </div>
+      <div class="child2">
+        <center><span id="a1">ABOUT CATERING</span></center>
+        <center><span id="a2">Tradition since 1889</span></center>
+        <p style="font-weight: 300; color: black;">
+          The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor
+          sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only
+          use seasonal ingredients.
+        </p>
+        <p style="color: grey">
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+          officia deserunt mollit anim id est laborum consectetur adipiscing
+          elit, sed do eiusmod temporincididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <!-- third section -->
+
+    <div class="menu" id="Menu">
+      <div class="child3">
+        <span id="a3">Our Menu</span>
+        <h4>Bread Basket</h4>
+        <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+        <h4>Honey Almond Granola with Fruits</h4>
+        <p>
+          Natural cereal of honey toasted oats, raisins, almonds and dates 7.00
+        </p>
+
+        <h4>Belgian Waffle</h4>
+        <p>Vanilla flavored batter with malted flour 7.50</p>
+
+        <h4>Scrambled eggs</h4>
+        <p>
+          Scrambled eggs, roasted red pepper and garlic, with green onions 7.50
+        </p>
+
+        <h4>Blueberry Pancakes</h4>
+        <p>With syrup, butter and lots of berries 8.50</p>
+      </div>
+      <div class="child4">
+        <img src="https://www.w3schools.com/w3images/tablesetting.jpg" alt="" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="contact" id="Contact">
+      <h2>Contact</h2>
+
+      <p>
+        We offer full-service catering for any event, large or small. We
+        understand your needs and we will cater the food to satisfy the biggerst
+        criteria of them all, both look and taste. Do not hesitate to contact
+        us.
+      </p>
+      <b style="color: red"
+        >Catering Service, 42nd Living St, 43043 New York, NY</b
+      >
+      <p style="color: black">
+        Catering Service, 42nd Living St, 43043 New York, NY
+      </p>
+      <p>
+        You can also contact us by phone 00553123-2323 or email
+        catering@catering.com, or you can send us a message here:
+      </p>
+      <p><input type="text" placeholder="Name" /></p>
+      <hr />
+      <input type="number" placeholder="How many people" />
+      <hr />
+      <input type="datetime-local" placeholder="" />
+      <hr />
+      <input type="text" placeholder="Message" />
+      <hr />
+      <input type="button" value="send message" />
+    </div>
+
+    <div class="last">
+      powered by- Venu kumar
+    </div>
+  </body>
+</html>
